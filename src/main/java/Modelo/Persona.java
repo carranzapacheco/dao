@@ -6,6 +6,7 @@ package Modelo;
 
 public class Persona {
     private String id, nombre, sexo, apellido, carrera;
+    private int edad;
 
     public String getId() {
         return id;
@@ -46,6 +47,22 @@ public class Persona {
     public void setCarrera(String carrera) {
         this.carrera = carrera;
     }
-    
-    
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public Persona(String id, String nombre, String sexo, String apellido, String carrera, int edad) {
+        this.id = id;
+        this.nombre = nombre;
+        this.sexo = sexo;
+        this.apellido = apellido;
+        this.carrera = carrera;
+        this.edad = edad;
+    }
+               
 }
